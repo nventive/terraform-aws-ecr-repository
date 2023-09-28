@@ -5,7 +5,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square)](LICENSE) [![Latest Release](https://img.shields.io/github/release/nventive/terraform-aws-ecr-repository.svg?style=flat-square)](https://github.com/nventive/terraform-aws-ecr-repository/releases/latest)
 
-Terraform module to create an ECR repository.
+Terraform module to provision an ECR repository.
 
 ---
 
@@ -35,8 +35,6 @@ module "ecr" {
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13.0 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.9 |
-| <a name="requirement_null"></a> [null](#requirement\_null) | >= 2.0 |
-| <a name="requirement_template"></a> [template](#requirement\_template) | >= 2.0 |
 ## Providers
 
 | Name | Version |
