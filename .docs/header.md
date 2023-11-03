@@ -4,7 +4,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square)](LICENSE) [![Latest Release](https://img.shields.io/github/release/nventive/terraform-aws-ecr-repository.svg?style=flat-square)](https://github.com/nventive/terraform-aws-ecr-repository/releases/latest)
 
-Terraform module to create an ECR repository.
+Terraform module to provision an ECR repository.
 
 ---
 
