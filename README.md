@@ -29,17 +29,20 @@ module "ecr" {
   protected_tags = ["prod", "staging"]
 }
 ```
+
 ## Requirements
 
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13.0 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.9 |
+
 ## Providers
 
 | Name | Version |
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.9 |
+
 ## Modules
 
 | Name | Source | Version |
@@ -48,6 +51,7 @@ module "ecr" {
 | <a name="module_ecr_pull_push_role"></a> [ecr\_pull\_push\_role](#module\_ecr\_pull\_push\_role) | cloudposse/iam-role/aws | 0.17.0 |
 | <a name="module_ecr_pull_role"></a> [ecr\_pull\_role](#module\_ecr\_pull\_role) | cloudposse/iam-role/aws | 0.17.0 |
 | <a name="module_this"></a> [this](#module\_this) | cloudposse/label/null | 0.25.0 |
+
 ## Resources
 
 | Name | Type |
@@ -55,6 +59,7 @@ module "ecr" {
 | [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
 | [aws_iam_policy_document.ecr_pull_policy](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
 | [aws_iam_policy_document.ecr_push_policy](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -81,6 +86,7 @@ module "ecr" {
 | <a name="input_stage"></a> [stage](#input\_stage) | ID element. Usually used to indicate role, e.g. 'prod', 'staging', 'source', 'build', 'test', 'deploy', 'release' | `string` | `null` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Additional tags (e.g. `{'BusinessUnit': 'XYZ'}`).<br>Neither the tag keys nor the tag values will be modified by this module. | `map(string)` | `{}` | no |
 | <a name="input_tenant"></a> [tenant](#input\_tenant) | ID element \_(Rarely used, not included by default)\_. A customer identifier, indicating who this instance of a resource is for | `string` | `null` | no |
+
 ## Outputs
 
 | Name | Description |
@@ -88,6 +94,7 @@ module "ecr" {
 | <a name="output_registry_id"></a> [registry\_id](#output\_registry\_id) | Registry ID |
 | <a name="output_repository_name"></a> [repository\_name](#output\_repository\_name) | Name of first repository created |
 | <a name="output_repository_url"></a> [repository\_url](#output\_repository\_url) | URL of first repository created |
+
 ## Breaking Changes
 
 Please consult [BREAKING\_CHANGES.md](BREAKING\_CHANGES.md) for more information about version
